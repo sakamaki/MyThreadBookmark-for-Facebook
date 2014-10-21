@@ -1,0 +1,12 @@
+<ion-view title="Facebook Login">
+  <ion-content class="has-header padding">
+    <div>
+      <div class="alert alert-info" data-ng-show="salutation">Hello, {{user.name}}</div>
+      <div class="alert alert-warning" data-ng-show="byebye">Bye bye :'(</div>
+    </div>
+
+    <button type="button" class="button button-positive" data-ng-show="!logged" data-ng-disabled="!facebookReady" data-ng-click="IntentLogin()">Login with Facebook</button>
+    <button type="button" class="button button-assertive" data-ng-show="logged" data-ng-disabled="!facebookReady" data-ng-click="logout()">Logout</button>
+
+  </ion-content>
+</ion-view>

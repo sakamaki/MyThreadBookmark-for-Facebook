@@ -1,0 +1,17 @@
+<ion-view title="Bookmark" ng-init="showEmptyDiv()">
+  <ion-content class="has-header padding">
+    <div ng-show="isRequireLogin">
+      ログインしてくれ
+    </div>
+    <div class="card" ng-repeat="(createdAt, bookmark) in bookmarks" ng-click="showFacebookThread(bookmark.messageId)">
+      <div class="item item-text-wrap">
+        <img ng-src="{{bookmark.groupIcon}}" alt="group_icon"/>
+        {{bookmark.groupName}}<br>
+        <img ng-src="https://graph.facebook.com/{{bookmark.threadOwnerId}}/picture" alt="user"/>
+        {{bookmark.threadOwnerName}}
+        {{bookmark.name}}<br>
+        {{bookmark.message}}
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
