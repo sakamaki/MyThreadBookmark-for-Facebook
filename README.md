@@ -4,7 +4,10 @@ MyThreadBookmark-for-Facebook
 Facebookのグループのスレッドをブックマークしていつでもアクセス出来るようにしたものです。
 ブックマークはローカルストレージに保管してますので、異なるブラウザや端末ではデータの共有が出来ません。
 
-※要Facebookアプリ登録
+## Facebookアプリ登録
+1. Facebook Developerでアプリの作成
+2. permissionは user_groups のみ
+3. ローカルで試したい人はhttp://localhost:8100等をSettings→WebSite→SiteURLにて登録する
 
 ## app/scripts/app.jsの修正
 
