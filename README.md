@@ -9,10 +9,15 @@ Facebookのグループのスレッドをブックマークしていつでもア
 2. permissionは user_groups のみ
 3. ローカルで試したい人はhttp://localhost:8100等をSettings→WebSite→SiteURLにて登録する
 
-## app/scripts/app.jsの修正
-
+## 準備
+app/scripts/app.jsの修正
 ```javascript
 FacebookProvider.init('YOUR_APP_ID');
+```
+
+install bower library
+```bash
+$ bower install
 ```
 
 ## 起動
